@@ -1,0 +1,141 @@
+.product-detail {
+    padding: 32px 24px 80px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-orange);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 24px;
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    transform: translateX(-4px);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.detail-image-wrap {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    background: var(--white);
+    box-shadow: var(--card-shadow);
+}
+
+.detail-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.detail-info .age-tag {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--accent-yellow);
+    color: var(--dark-purple);
+    padding: 6px 16px;
+    border-radius: var(--radius-full);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.detail-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--dark-purple);
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.detail-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.stars {
+    color: #f59e0b;
+    font-size: 18px;
+}
+
+.rating-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.detail-price {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primary-orange);
+    margin-bottom: 20px;
+}
+
+.detail-desc {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.detail-whats-inside {
+    background: var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin-bottom: 28px;
+}
+
+.detail-whats-inside h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark-purple);
+    margin-bottom: 14px;
+}
+
+.detail-whats-inside ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-whats-inside li {
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    line-height: 1.5;
+}
+
+.detail-add-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 16px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.detail-shipping {
+    text-align: center;
+}
+
+.detail-shipping p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}

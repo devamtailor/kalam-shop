@@ -1,0 +1,97 @@
+.shop-page {
+    padding: 40px 24px 80px;
+}
+
+.shop-header {
+    margin-bottom: 32px;
+}
+
+.shop-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--dark-purple);
+    margin-bottom: 20px;
+}
+
+.shop-controls {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.search-wrap {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-400);
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px 12px 42px;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    transition: var(--transition);
+    background: var(--white);
+}
+
+.search-input:focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 0 3px rgba(45, 174, 187, 0.1);
+}
+
+.sort-select {
+    padding: 12px 16px;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    background: var(--white);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.sort-select:focus {
+    border-color: var(--teal);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 80px 0;
+    color: var(--gray-400);
+}
+
+.empty-state svg {
+    margin-bottom: 16px;
+}
+
+.empty-state h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--gray-400);
+}
+
+.empty-state p {
+    font-size: 14px;
+    color: var(--gray-400);
+}
+
+@media (max-width: 768px) {
+    .shop-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-wrap {
+        max-width: none;
+    }
+}
